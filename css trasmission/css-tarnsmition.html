@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>	
+	<head><title> 
+	css-tarnsmition demo 
+	</title>
+		
+<style type="text/css">
+div#wrapper{
+	width:960px;
+	margin:auto;
+	font-family:sans-serif;
+	font-size:80%;
+}
+div#wrapper ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	width:960px;
+	position:relative;
+	z-index:99999;
+}
+div#wrapper ul li{
+	width:160px;
+	height:40px;
+	padding-top:20px;
+	float:left;
+	border-radius:5px;
+	text-align:center;
+	background-color:#777;
+	transition:background-color .8s, height .8s;
+	-webkit-transition: background-color .5s, height .5s;   
+
+}
+
+div#wrapper ul li:hover{
+	background-color:#009878;
+	height:140px;
+	box-shadow:0px 5px 8px #005578;
+	}
+
+div#wrapper ul li a:link,
+div#wrapper ul li a:visited{
+		color:#000;
+		
+}
+
+div#wrapper ul li a:hover{
+	color:#000;
+}	
+img.icon{
+		width:128px;
+		visibility:hidden;
+		transition:visibility 50ms;
+		-webkit-transition:visibility 50ms;
+}
+img.icon:hover{
+		visibility:visible;
+}
+
+
+div#wrapper ul li:hover img.icon{
+	visibility:visible;
+	
+}
+ </style>
+
+	</head>
+<body>
+		<div id="wrapper">
+		<h1>DSLR Camera Collection</h1>
+		<ul>
+			<li>
+				<a href="#">Canon</a><br/>
+					<img src="images/dslr.png" alt="" class="icon"/>
+			</li>
+			<li><a href="#">Nikon</a> <br/>
+					<img src="images/dslr2.png" alt="" class="icon"/>
+			</li>
+			<li><a href="#">Olympus</a> <br/>
+					<img src="images/dslr3.png" alt="" class="icon"/>
+            </li>
+            <li><a href="#">Panasonic</a> <br/>
+					<img src="images/dslr4.png" alt="" class="icon"/>
+            </li>					
+            <li><a href="#">Sony</a> <br/>
+					<img src="images/dslr5.png" alt="" class="icon"/>	
+            </li>
+            <li><a href="#">Pentex</a> <br/>
+					<img src="images/dslr6.png" alt="" class="icon"/>
+            </li>
+        </ul>			
+	</div>
+</body>	
+</html>
